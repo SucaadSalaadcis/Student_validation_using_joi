@@ -46,7 +46,7 @@ const studentVal = (stdObj) => {
     status:joi.string().required(),
     email: joi.string().email({tlds:{ allow:["com"]}}),
   /*   a valid email address string
-        must have two domain parts e.g. example.com
+         must have two domain parts e.g. example.com
            TLD must be .com or .net */
  })
  return schemaVal.validate(stdObj);
